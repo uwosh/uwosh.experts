@@ -1,0 +1,15 @@
+Changelog
+=========
+
+0.3.8 (2013-01-04) [tkimnguyen]
+-------------------------------
+
+- Works with Plone 4.1
+
+- Uses z3c.autoinclude 
+
+
+0.3.5 [vangheem]
+----------------
+- changed advanced search portlet to allow you to choose the context of the search
+

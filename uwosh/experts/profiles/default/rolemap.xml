@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<rolemap>
+  <roles>
+    <role name="Member" />
+  </roles>
+  <permissions>
+    <permission name="uwosh.experts: Add Expert"
+                acquire="True">
+      <role name="Member" />
+      <role name="Owner" />
+    </permission>
+  </permissions>
+</rolemap>

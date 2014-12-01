@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<portlets>
+
+ <!-- Portlet type registrations -->
+
+ <portlet
+   addview="uwosh.experts.AdvancedSearchPortlet"
+   title="Advanced Search Portlet"
+   description="A search portlet that allows some advanced features"
+   />
+
+</portlets>

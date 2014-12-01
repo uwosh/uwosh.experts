@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+		xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+		xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="uwosh.experts">
+
+    <include package="Products.CMFCore" />
+
+    <five:registerPackage package="." initialize=".initialize" />
+
+	  <genericsetup:registerProfile
+	      name="default"
+	      title="uwosh.experts"
+	      directory="profiles/default"
+	      description='Installation profile for uwosh.experts'
+	      provides="Products.GenericSetup.interfaces.EXTENSION"
+	      />
+
+     <plone:portlet
+         name="uwosh.experts.AdvancedSearchPortlet"
+         interface=".advancedsearchportlet.IAdvancedSearchPortlet"
+         assignment=".advancedsearchportlet.Assignment"
+         view_permission="zope2.View"
+         edit_permission="cmf.ManagePortal"
+         renderer=".advancedsearchportlet.Renderer"
+         addview=".advancedsearchportlet.AddForm"
+         editview=".advancedsearchportlet.EditForm"
+         />
+</configure>
